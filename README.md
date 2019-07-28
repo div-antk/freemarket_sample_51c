@@ -24,3 +24,6 @@ Things you may want to cover:
 * ...
 
 あんどうたくや( ´∀｀)
+wataru
+髙木宏国
+西田拓矢
