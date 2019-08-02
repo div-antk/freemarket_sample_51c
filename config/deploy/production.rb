@@ -49,10 +49,6 @@
 #
 # The server-based syntax can be used to override options:
 # ------------------------------------
-server '52.192.128.130',
-  user: 'ec2-user',
-  roles: %w{app db web}
-  
 # server "example.com",
 #   user: "user_name",
 #   roles: %w{web app},
@@ -63,3 +59,5 @@ server '52.192.128.130',
 #     auth_methods: %w(publickey password)
 #     # password: "please use keys"
 #   }
+
+server '52.192.128.130', user: 'ec2-user', roles: %w{app db web}
