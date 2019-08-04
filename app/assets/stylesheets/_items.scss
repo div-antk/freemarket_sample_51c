@@ -1,0 +1,69 @@
+.Wrapper {
+  height: 100vh;
+  width: 100%;
+  margin: 0%;
+  padding: 0%;
+  display: block;
+
+  .Top {
+    width: 100%;
+    height: 100px;
+    background-color: #fff;
+    position: relative;
+    // z-index: 1001;
+    // display: none;
+
+    .Header {
+      width: 700px;
+      margin: 0 auto;
+      padding: 8px 0 0;
+
+      &__top {
+        display: flex;
+
+        .top__name {
+          display: block;
+          color: #333;
+
+        }
+        .top__search {
+          position: relative;
+          margin-left: 45px;
+          width: 100%;
+          -webkit-box-flex: 1;
+          flex: 1;
+        }
+      }
+      &__bottom {
+        margin: 8px 0 0;
+        display: flex;
+
+
+        &__left {
+          // float: left;
+          flex: 1;
+          
+
+          .left__category {
+
+          }
+
+          .left__search-brand {
+
+          }
+        }
+
+        .bottom__right {
+          display: flex;
+          .right__sign-up {
+
+          }
+
+          .right__sign-in {
+
+          }
+        }
+      }
+    }
+  }
+}
