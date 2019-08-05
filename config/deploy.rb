@@ -32,8 +32,8 @@ end
 set :default_env, {
   rbenv_root: "/usr/local/rbenv",
   path: "/usr/local/rbenv/shims:/usr/local/rbenv/bin:$PATH",
-  export BASIC_AUTH_USER='admin'
-  export BASIC_AUTH_PASSWORD='2222'
+  BASIC_AUTH_USER: ENV['admin'],
+  BASIC_AUTH_PASSWORD: ENV['2222']
 }
 
 # Default branch is :master
