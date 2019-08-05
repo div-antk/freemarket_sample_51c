@@ -29,6 +29,13 @@ namespace :deploy do
   end
 end
 
+set :default_env, {
+  rbenv_root: "/usr/local/rbenv",
+  path: "/usr/local/rbenv/shims:/usr/local/rbenv/bin:$PATH",
+  export BASIC_AUTH_USER='admin'
+  export BASIC_AUTH_PASSWORD='2222'
+}
+
 # Default branch is :master
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
 
