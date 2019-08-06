@@ -15,55 +15,197 @@
 
     .Header {
       width: 700px;
+      height: 100px;
       margin: 0 auto;
       padding: 8px 0 0;
+      box-sizing: border-box;
 
       &__top {
         display: flex;
+        height: 40px;
+        
 
         .top__name {
           display: block;
           color: #333;
+          width: 80px;
+          line-height: 40px;
 
         }
         .top__search {
-          position: relative;
+          background-color: #F5f5f5;
+          border: 1px solid #ccc;
+          border-radius: 4px;
           margin-left: 45px;
           width: 100%;
-          -webkit-box-flex: 1;
-          flex: 1;
+          // height: 40px;
+          line-height: 40px;
+          position: relative;
+          
+          // -webkit-box-flex: 1;
+          // flex: 1;
+          .fa {
+            position: absolute;
+            top: 0;
+            right: 0;
+            display: flex;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            cursor: pointer;
+            color: #333;
+            line-height: 40px;
+          }
+          .search__word {
+            font-size: 16px;
+            color: #ccc;
+            padding: 0 42px 0 10px;
+          }
         }
       }
       &__bottom {
+        width: 100%;
+        height: 44px;
         margin: 8px 0 0;
-        display: flex;
+        
 
-
-        &__left {
-          // float: left;
-          flex: 1;
+        .bottom__left {
+          height: 44px;
+          display: block;
+          display: flex;
+          float: left;
+          font-size: 14px;
+          line-height: 35px;
           
-
           .left__category {
+            position: relative;
+            // display: inline-block;
+            padding: 0 11px;
+            padding-left: 0;
+            cursor: pointer;
+            font-weight: bold;
 
+            .fa {
+              // display: inline-block;
+              // font-family: 'icon-font';
+              // speak: none;
+              // font-style: normal;
+              // font-variant: normal;
+              // text-transform: none;
+              // line-height: 1;
+
+              font-weight: 400;
+              color: #ea352d;
+              font-size: 12px;
+              margin-right: 4px;
+            }
           }
 
           .left__search-brand {
+            position: relative;
+            display: inline-block;
+            padding: 0 11px;
+            padding-right: 0px;
+            cursor: pointer;
+            font-weight: bold;
 
+            .fa {
+              // position: absolute;
+              // top: 44px;
+              // left: -34px;
+              // z-index: 1000;
+              background-color: #fff;
+
+              color: #ea352d;
+              
+            }
           }
         }
 
         .bottom__right {
           display: flex;
-          .right__sign-up {
+          float: right;
+          text-align: center;
 
+          .right__sign-up {
+            display: block;
+            border: 1px solid #ea352d;
+            background-color: #ea352d;
+            color: #fff;
+            border-radius: 4px;
+            padding: 0 10px;
+            font-size: 14px;
+            line-height: 30px;
+            height: 30px;
+            width: 100px;
+            cursor: pointer;
           }
 
           .right__sign-in {
-
+            display: inline-block;
+            border: 1px solid #38AEF0;
+            background-color: #fff;
+            color: #38AEF0;
+            border-radius: 4px;
+            margin: 0 0 0 8px;
+            font-size: 14px;
+            line-height: 30px;
+            width: 80px;
+            height: 30px;
+            cursor: pointer;
           }
         }
       }
     }
+    .Advertising {
+      height: 290px;
+      width: 100%;
+      // overflow: hidden;
+      // position: relative;
+      background-color: #ccc;
+
+      .Advertisings {
+        position: relative;
+        // overflow: hidden;
+        height: 290px;
+        width: 100%;
+        box-sizing: border-box;
+
+        &__nav {
+          position: relative;
+          // overflow: hidden;
+          height: 290px;
+          width: 100%;
+          box-sizing: border-box;
+  
+          .nav__next {
+            position: absolute;
+            float: right;
+            top: 40%;
+            right: 5%;
+            color: #fff;
+            font-size: 40px;
+          }
+  
+          .nav__prev {
+            position: absolute;
+            top: 40%;
+            left: 5%;
+            color: #fff;
+            font-size: 40px;
+
+          }
+
+          .nav__dots {
+            width: 100%;
+            display: block;
+            position: absolute;
+            bottom: 0;
+            margin: 15px 0;
+            text-align: center;
+          }
+        }
+      }
+    }    
   }
 }
