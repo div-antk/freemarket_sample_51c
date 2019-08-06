@@ -3,26 +3,31 @@
     .Header
       .Header__top
         .top__name
-          mercari
+          チームC
         .top__search
-          何かお探しですか？
+          .search__word
+            何かお探しですか？
+            =fa_icon "search", class: 'icon'
+
       .Header__bottom
-        .Header__bottom__left
+        .bottom__left
           .left__category
+            =fa_icon "list-ul", class: 'icon'
             カテゴリーから探す
           .left__search-brand
+            =fa_icon "tag", class: 'icon'
             ブランドから探す
         .bottom__right
           .right__sign-up
-            新規登録
+            新規会員登録
           .right__sign-in
             ログイン
     .Advertising
-      キャンプ用品
-    .Advertising-nav
-      .Advertising-nav__next
-        next
-      .Advertising-prev__prev
-        prev
-    .Advertising-dots
-      ● ●
+      .Advertisings
+        .Advertisings__nav
+          .nav__next
+            =fa_icon "chevron-right", class: 'icon'
+          .nav__prev
+            =fa_icon "chevron-left", class: 'icon'
+          .nav__dots
+            ● ●
