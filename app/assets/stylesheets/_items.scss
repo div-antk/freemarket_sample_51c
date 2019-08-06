@@ -4,6 +4,7 @@
   margin: 0%;
   padding: 0%;
   display: block;
+  position: fixed;
 
   .Top {
     width: 100%;
@@ -14,13 +15,12 @@
     // display: none;
 
     .Header {
-      width: 700px;
-      height: 100px;
-      margin: 0 auto;
-      padding: 8px 0 0;
       box-sizing: border-box;
 
       &__top {
+        width: 700px;
+        margin: 0 auto;
+        padding: 8px 0 0;
         display: flex;
         height: 40px;
         
@@ -38,7 +38,6 @@
           border-radius: 4px;
           margin-left: 45px;
           width: 100%;
-          // height: 40px;
           line-height: 40px;
           position: relative;
           
@@ -63,19 +62,20 @@
           }
         }
       }
-      &__bottom {
-        width: 100%;
-        height: 44px;
-        margin: 8px 0 0;
+      &__mid {
+        width: 700px;
+        height: 40px;
+        margin: 0 auto;
+        padding: 8px 0 0;
         
-
-        .bottom__left {
-          height: 44px;
+        .mid__left {
+          height: 40px;
           display: block;
           display: flex;
           float: left;
           font-size: 14px;
           line-height: 35px;
+          box-sizing: border-box;
           
           .left__category {
             position: relative;
@@ -122,7 +122,7 @@
           }
         }
 
-        .bottom__right {
+        .mid__right {
           display: flex;
           float: right;
           text-align: center;
@@ -156,56 +156,63 @@
           }
         }
       }
-    }
-    .Advertising {
-      height: 290px;
-      width: 100%;
-      // overflow: hidden;
-      // position: relative;
-      background-color: #ccc;
 
-      .Advertisings {
-        position: relative;
-        // overflow: hidden;
+      .Header__bottom {
         height: 290px;
         width: 100%;
-        box-sizing: border-box;
-
-        &__nav {
+        // overflow: hidden;
+        // position: relative;
+        background-color: #ccc;
+  
+        .bottom__Advertisings {
           position: relative;
           // overflow: hidden;
           height: 290px;
           width: 100%;
           box-sizing: border-box;
   
-          .nav__next {
-            position: absolute;
-            float: right;
-            top: 40%;
-            right: 5%;
-            color: #fff;
-            font-size: 40px;
-          }
-  
-          .nav__prev {
-            position: absolute;
-            top: 40%;
-            left: 5%;
-            color: #fff;
-            font-size: 40px;
-
-          }
-
-          .nav__dots {
+          .Advertisings__nav {
+            position: relative;
+            // overflow: hidden;
+            height: 290px;
             width: 100%;
-            display: block;
-            position: absolute;
-            bottom: 0;
-            margin: 15px 0;
-            text-align: center;
+            box-sizing: border-box;
+    
+            .nav__next {
+              position: absolute;
+              float: right;
+              top: 40%;
+              right: 5%;
+              color: #fff;
+              font-size: 40px;
+            }
+    
+            .nav__prev {
+              position: absolute;
+              top: 40%;
+              left: 5%;
+              color: #fff;
+              font-size: 40px;
+  
+            }
+  
+            .nav__dots {
+              width: 100%;
+              display: block;
+              position: absolute;
+              bottom: 0;
+              margin: 15px 0;
+              text-align: center;
+            }
           }
         }
       }
     }    
   }
+  // .Main {
+  //   background-color: #f5f5f5;
+  //   padding: 20px 0 0 0;
+  //   height: auto;
+  //   width: 100%;
+  // }
 }
