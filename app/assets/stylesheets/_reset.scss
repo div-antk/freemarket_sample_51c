@@ -81,13 +81,24 @@ th {
   text-align:left;
 }
 h1,
-h2,
+h2 {
+  font-size: 14px;
+}
 h3,
 h4,
 h5,
 h6 {
   font-size:100%;
   font-weight:normal;
+}
+p {
+  font-size: 22px;
+  margin: 10px 0 0;
+  // display: block;
+  // margin-block-start: 1em;
+  // margin-block-end: 1em;
+  // margin-inline-start: 0px;
+  // margin-inline-end: 0px;
 }
 q:before,
 q:after {
