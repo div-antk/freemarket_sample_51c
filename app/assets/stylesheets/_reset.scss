@@ -74,8 +74,14 @@ var {
 ol,
 ul {
   list-style:none;
+  display: block;
 }
-
+li {
+  display: block;
+  margin: 16px 0 0;
+  font-size: 12px;
+  opacity: .7;
+}
 caption,
 th {
   text-align:left;
