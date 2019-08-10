@@ -1,7 +1,10 @@
+@import "config/_colors.scss";
+@import "config/_settings.scss";
+
 #Footer {
   background-color: #212121;
   padding: 0 20px 10px 20px;
-  color: #fff;
+  color: $white;
   width: 100%;
   box-sizing: border-box;
 
@@ -12,44 +15,32 @@
     flex-wrap: wrap;
 
     .Information__about {
-      padding-right: 10px;
-      padding-top: 18px;
-      width: 50%;
-      box-sizing: border-box;
+      @include information;
       // flex-grow: 1;
 
       .about-footer {
-        font-size: 16px;
-        font-weight: 100;
+        @include font;
       }
 
       ul {
         
         .link-twitter {
-          margin: 14px 0 0;
-          display: inline-block;
           padding-right: 18px;
-          cursor: pointer;
+          @include socialmedia;
         }
 
         .link-facebook {
-          margin: 14px 0 0;
-          display: inline-block;
-          cursor: pointer;
+          @include socialmedia;
         }
       }
     }
 
     .Information__guide {
-      padding-right: 10px;
-      padding-top: 18px;
-      width: 50%;
-      box-sizing: border-box;
+      @include information;
       // flex-grow: 1;
 
       .guide-footer {
-        font-size: 16px;
-        font-weight: 100;
+        @include font;
       }
     }
 
@@ -60,23 +51,20 @@
       flex-wrap: wrap;
 
       .privacy-footer {
-        font-size: 16px;
-        font-weight: 100;
         width: 100%;
+        @include font;
       }
 
       .inner-left {
         padding-right: 10px;
-        width: 50%;
-        box-sizing: border-box;
+        @include inner;
         // flex-grow: 1;
         // vertical-align: top;
       }
 
       .inner-right {
         padding-left: 10px;
-        width: 50%;
-        box-sizing: border-box;
+        @include inner
         // flex-grow: 1;
         // vertical-align: top;
       }
@@ -87,8 +75,7 @@
       margin-top: 35px;
 
       .nav-country {
-        font-size: 16px;
-        font-weight: 100;
+        @include font;
       }
 
       ul {
@@ -127,8 +114,8 @@
   width: 160px;
   height: 160px;
   border-radius: 50%;
-  background-color: #ea352d;
-  color: #fff;
+  background-color: $red;
+  color: $white;
   font-size: 22px;
   z-index: 1000;
   cursor: pointer;
