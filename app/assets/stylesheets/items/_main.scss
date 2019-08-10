@@ -1,0 +1,59 @@
+@import "config/_colors.scss";
+@import "config/_settings.scss";
+
+#Main {
+  padding: 20px 0 0 0;
+  height: auto;
+  width: 100%;
+  padding: 40px 0;
+  background-color: $light_white;
+
+  .Pickup-header {
+    font-size: 28px;
+    text-align: center;
+    font-weight: bold;
+  }
+  
+  .Items{
+    width: 700px;
+    margin: 0 auto;
+    display: block;
+    .Items__text {
+      margin: 26px 11px;
+      color: #0099E8;
+      font-size: 22px;
+      text-align: center;
+      font-weight: bold;
+    }
+    .Items__content {
+      height: 330px;
+      position: relative;
+      display: flex;
+
+      .content__box1 {
+        background-color: $red;
+        @include content_box;
+      }
+
+      .content__box2 {
+        background-color: #0099E8;
+        @include content_box;
+        }
+
+      .content__box3 {
+        background-color: yellow;
+        @include content_box;
+      }
+    }
+
+    .Items__more {
+      display: block;
+      padding: 20px 0 30px;
+      text-align: right;
+      width: 99.5%;
+      font-size: 14px;
+      color: #0099E8;
+      // cursor: pointer;
+    }
+  }
+}

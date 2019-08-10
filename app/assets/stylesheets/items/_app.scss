@@ -1,3 +1,5 @@
+@import "config/_colors.scss";
+
 #App {
   // position: relative;
   background-color: #808080;
@@ -11,7 +13,7 @@
     width: 750px;
     height: 260px;
     margin: 0 auto;
-    color: #fff;
+    color: $white;
     // display: none;
     // overflow: hidden;
 
@@ -26,7 +28,7 @@
         margin: 20px 0 0;
         height: 68px;
         width: 374px;
-        background-color: #fff;
+        background-color: $white;
 
         .app-icon {
           float: left;
@@ -38,12 +40,10 @@
         .app-download {
           // position: absolute;
           // top: 14px;
-          
+          // line-height: 68px;
           float: right;
           display: flex;
           margin: 14px 0 0 24px;
-          // line-height: 68px;
-
 
           .apple {
             display: block;

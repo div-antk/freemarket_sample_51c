@@ -1,0 +1,75 @@
+@mixin next_prev {
+  position: absolute;
+  top: 40%;
+  color: $white;
+  font-size: 40px;
+}
+
+@mixin information {
+  padding-right: 10px;
+  padding-top: 18px;
+  width: 50%;
+  box-sizing: border-box;
+}
+
+@mixin font {
+  font-size: 16px;
+  font-weight: 100;
+}
+
+@mixin socialmedia {
+  margin: 14px 0 0;
+  display: inline-block;
+  cursor: pointer;
+}
+
+@mixin inner {
+  width: 50%;
+  box-sizing: border-box;
+}
+
+@mixin content_box {
+  width: 213px;
+  margin: 0 0 0 20px;
+  position: relative;
+  cursor: pointer;
+
+  .photo {
+    overflow: hidden;
+    position: relative;
+    height: 220px;
+  }
+
+  .data {
+    padding: 16px;
+    background-color: $white;
+    height: 110px;
+    box-sizing: border-box;
+    
+    .name {
+      font-size: 16px;
+      overflow: hidden;
+      font-weight: 400;
+      height: 48px;
+      color: $black;
+    }
+
+    .num {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin: 8px 0 0;
+
+      .price {
+        font-size: 16px;
+        font-weight: 400;
+      }
+
+      .like {
+        font-size: 16px;
+        font-weight: 400;
+        color: $black;
+      }
+    }
+  }
+}

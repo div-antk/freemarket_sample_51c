@@ -1,6 +1,9 @@
+@import "config/_colors.scss";
+@import "config/_settings.scss";
+
 #Top {
   position: relative;
-  background-color: #fff;
+  background-color: $white;
   // width: 100%;
   // height: 400px;
   // z-index: 1001;
@@ -8,7 +11,7 @@
 
   .Header {
     box-sizing: border-box;
-    // background-color: #fff;
+    // background-color: $white;
 
     &__top {
       width: 700px;
@@ -20,14 +23,14 @@
 
       .top__name {
         display: block;
-        color: #333;
+        color: $black;
         width: 80px;
         line-height: 40px;
 
       }
       .top__search {
-        background-color: #F5f5f5;
-        border: 1px solid #ccc;
+        background-color: $light_white;
+        border: 1px solid $light_black;
         border-radius: 4px;
         margin-left: 45px;
         width: 100%;
@@ -45,12 +48,12 @@
           width: 40px;
           height: 40px;
           cursor: pointer;
-          color: #333;
+          color: $black;
           line-height: 40px;
         }
         .search__word {
           font-size: 16px;
-          color: #ccc;
+          color: $light_black;
           padding: 0 42px 0 10px;
         }
       }
@@ -88,7 +91,7 @@
             // line-height: 1;
 
             font-weight: 400;
-            color: #ea352d;
+            color: $red;
             font-size: 12px;
             margin-right: 4px;
           }
@@ -107,9 +110,9 @@
             // top: 44px;
             // left: -34px;
             // z-index: 1000;
-            background-color: #fff;
+            background-color: $white;
 
-            color: #ea352d;
+            color: $red;
             
           }
         }
@@ -122,9 +125,9 @@
 
         .right__sign-up {
           display: block;
-          border: 1px solid #ea352d;
-          background-color: #ea352d;
-          color: #fff;
+          border: 1px solid $red;
+          background-color: $red;
+          color: $white;
           border-radius: 4px;
           padding: 0 10px;
           font-size: 14px;
@@ -136,9 +139,9 @@
 
         .right__sign-in {
           display: inline-block;
-          border: 1px solid #38AEF0;
-          background-color: #fff;
-          color: #38AEF0;
+          border: 1px solid $light_blue;
+          background-color: $white;
+          color: $light_blue;
           border-radius: 4px;
           margin: 0 0 0 8px;
           font-size: 14px;
@@ -155,7 +158,7 @@
       width: 100%;
       // overflow: hidden;
       // position: relative;
-      background-color: #ccc;
+      background-color: $light_black;
 
       .bottom__Advertisings {
         position: relative;
@@ -172,21 +175,15 @@
           box-sizing: border-box;
   
           .nav__next {
-            position: absolute;
-            float: right;
-            top: 40%;
             right: 5%;
-            color: #fff;
-            font-size: 40px;
+            float: right;
+            @include next_prev;
           }
   
           .nav__prev {
-            position: absolute;
-            top: 40%;
             left: 5%;
-            color: #fff;
-            font-size: 40px;
-
+            float: left;
+            @include next_prev;
           }
 
           .nav__dots {
