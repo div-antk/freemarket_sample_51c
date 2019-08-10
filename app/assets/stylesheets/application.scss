@@ -13,8 +13,9 @@
  *= require_tree .
  *= require_self
  */
-@import "reset";
+@import "./reset";
 @import "font-awesome";
+@import "config/colors";
 @import "items/wrapper";
 @import "items/top";
 @import "items/main";
