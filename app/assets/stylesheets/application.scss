@@ -14,5 +14,9 @@
  *= require_self
  */
 @import "reset";
-@import "items";
 @import "font-awesome";
+@import "items/wrappers";
+@import "items/tops";
+@import "items/mains";
+@import "items/apps";
+@import "items/footers";
