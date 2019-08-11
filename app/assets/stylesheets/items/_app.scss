@@ -1,12 +1,11 @@
-@import "config/_colors.scss";
-
 #App {
-  // position: relative;
+  position: relative;
   background-color: #808080;
   background-position: center;
   background-size: cover;
   width: 100%;
   height: 260px;
+  background: url("https://www.mercari.com/jp/assets/img/common/jp/top/download_bg_pc.jpg?76384908");
 
   .Apps {
     position: relative;
@@ -28,13 +27,11 @@
         margin: 20px 0 0;
         height: 68px;
         width: 374px;
-        background-color: $white;
 
         .app-icon {
           float: left;
           height: 68px;
           width: 68px;
-          background-color: #f0f;
         }
         
         .app-download {
@@ -50,7 +47,6 @@
             height: 40px;
             width: 133px;
             line-height: 68px;
-            background-color: #99ffff;
             // display: block;
             // display: flex;
           }
@@ -60,14 +56,12 @@
             display: block;
             height: 40px;
             width: 133px;
-            background-color: #99ffcc;
           }
         }
       }
     }
 
-    .Apps__picture {
-      background-color: #ccccffff;
+    .Apps__pictures {
       position: absolute;
       top: 0;
       right: 0;

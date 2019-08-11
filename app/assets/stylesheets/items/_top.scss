@@ -1,6 +1,3 @@
-@import "config/_colors.scss";
-@import "config/_settings.scss";
-
 #Top {
   position: relative;
   background-color: $white;
@@ -23,9 +20,8 @@
 
       .top__name {
         display: block;
-        color: $black;
-        width: 80px;
-        line-height: 40px;
+        width: 134px;
+        line-height: 36px;
 
       }
       .top__search {
