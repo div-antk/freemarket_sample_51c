@@ -102,6 +102,14 @@
 | image   | VARCHAR   | null: false                    |
 |         |           |                                |
 
+## ★ likes
+
+| Column  | Type      | Option                         |
+| ------- | --------- | ------------------------------ |
+| user_id | REFERENCE | null: false, foreign_key: true |
+| item_id | REFERENCE | null: false, foreign_key: true |
+|         |           |                                |
+
 ## ★ deposits
 
 | Column  | Type      | Option                         |
