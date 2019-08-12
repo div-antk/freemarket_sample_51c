@@ -26,6 +26,17 @@
 | status            | INT       | null: false                   |
 |                   |           |                               |
 
+Association
+
+- has_many :items
+- has_many :comments
+- has_many :likes
+- has_many :ratings
+- has_many :deposits
+- has_one :credit_card
+
+---
+
 ## ★ credit_cards
 
 | Column        | Type      | Option                         |
@@ -37,7 +48,13 @@
 | security_code | INT       | null: false                    |
 |               |           |                                |
 
-## ★ rating
+Association
+
+- belongs_to :user
+
+---
+
+## ★ ratings
 
 | Column    | Type      | Option                         |
 | --------- | --------- | ------------------------------ |
@@ -45,7 +62,30 @@
 | excellent | INT       | null: true                     |
 | good      | INT       | null: true                     |
 | bad       | INT       | null: true                     |
+| text      | VARCHAR   | null: true                     |
 |           |           |                                |
+
+Association
+
+- belongs_to :user
+- has_many :items
+
+---
+
+## ★ deposits
+
+| Column  | Type      | Option                         |
+| ------- | --------- | ------------------------------ |
+| user_id | REFERENCE | null: false, foreign_key: true |
+| cash    | REFERENCE | null: true, foreign_key: true  |
+| point   | REFERENCE | null: ture, foreign_key: true  |
+|         |           |                                |
+
+Association
+
+- belongs_to :user
+
+---
 
 ## ★ items
 
@@ -65,6 +105,18 @@
 | user_id     | REFERENCE | null: false, foreign_key: true |
 |             |           |                                |
 
+Association
+
+- belongs_to :user
+- has_many: comments
+- has_many: images
+- has_many: likes
+- has_one: category
+- has_one: brand, thorough: :category
+- has_one: shipping
+
+---
+
 ## ★ shippings
 
 | Column        | Type      | Option                         |
@@ -75,6 +127,12 @@
 | handling_time | INT       | null: false                    |
 |               |           |                                |
 
+Association
+
+- belongs_to :item
+
+---
+
 ## ★ categories
 
 | Column    | Type      | Option                         |
@@ -83,6 +141,27 @@
 | category  | VARCHAR   | null: false                    |
 | brand_id  | REFERENCE | null: true, foreign_key: true  |
 |           |           |                                |
+
+Association
+
+- belongs_to :item
+- has_one :brands
+
+---
+
+## ★ brands
+
+| Column      | Type    | Option      |
+| ----------- | ------- | ----------- |
+| category_id | INT     | null: false |
+| name        | VARCHAR | null: false |
+|             |         |             |
+
+Association
+
+- belongs_to :category
+
+---
 
 ## ★ comments
 
@@ -93,6 +172,13 @@
 | comment | VARCHAR   | null: false                    |
 |         |           |                                |
 
+Association
+
+- belongs_to :user
+- belongs_to :item
+
+---
+
 ## ★ images
 
 | Column  | Type      | Option                         |
@@ -102,6 +188,12 @@
 | image   | VARCHAR   | null: false                    |
 |         |           |                                |
 
+Association
+
+- belongs_to :user
+
+---
+
 ## ★ likes
 
 | Column  | Type      | Option                         |
@@ -110,11 +202,9 @@
 | item_id | REFERENCE | null: false, foreign_key: true |
 |         |           |                                |
 
-## ★ deposits
+Association
 
-| Column  | Type      | Option                         |
-| ------- | --------- | ------------------------------ |
-| user_id | REFERENCE | null: false, foreign_key: true |
-| cash    | REFERENCE | null: true, foreign_key: true  |
-| point   | REFERENCE | null: ture, foreign_key: true  |
-|         |           |                                |
+- belongs_to :user
+- belongs_to :item
+
+---
